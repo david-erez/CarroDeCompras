@@ -3,62 +3,70 @@
 
 - herramienta de diseño para el mockup:  https://www.figma.com/design/SEEF1mlPbFqDsQDnMy7E01/Sin-t%C3%ADtulo?t=Wc4zS4r8jvy7Of7Z-1
 
-## usuario :
+
+## Usuarios :
 - instructores.
 - aprendices.
 
-## situación: 
+## Situación: 
+Durante los recesos los usuarios disponen de poco tiempo para comprar alimentos. La cafetería presenta filas extensas y el personal no alcanza a atender a todos los clientes, por lo que varios aprendices regresan a clase sin poder realizar su compra.
 
-- recesos cortos, filas largas y falta de personal para atender, por ende algunos aprendices no alcanzan a ser atendidos. se requiere disminuir el tiempo de espera por cliente , haciendo un sistema mas eficiente.
+## Problema identificado:
+Existe un alto tiempo de espera en la cafetería debido al proceso de atención manual, lo cual afecta el aprovechamiento del receso y la satisfacción de los usuarios.
 
 ## solucion :
+- se propone un sistema web de pedidos anticipados que permita visualizar y seleccionar productos disponibles, agregarlos a un carrito y confirmar el pedido antes de llegar a la cafeteria, permitiendo hacer pagos en linea o directamente a caja y sin hacer fila.
+El usuario solo deberá acercarse a recoger el pedido o pagarlo en caja, reduciendo el tiempo de atención y las filas.
 
-- se propone un sistema web de pedidos anticipados que permita seleccionar productos, agregarlos a un carrito y confirmar el pedido, permitiendo hacer pagos en linea o directamente a caja y sin hacer fila.
+## Requerimientos :
+### Funcionales :
+El sistema debe permitir:
+- Registrarse.
+- Iniciar session.
+- Visualizacion del catalogo de productos con su precio.
+- Agregar productos al carrito.
+- Poder modificar cantidades en el carrito.
+- Eliminar articulos del carrito.
+- Confirmar el pedido.
+- Registrar el pedido en el sistema.
+- Generar un comprobante de pedido.
+- Gestión de productos por parte del administrador (crear, editar o desactivar productos).
+- Ver lista de pedidos
 
 
-## requerimientos :
-### funcionales :
-el sistema debe permitir:
-- registrarse.
-- iniciar session.
-- mostrar productos con su respectivo valor.
-- agregar productos al carrito.
-- poder modificar cantidades.
-- eliminar articulos del carrito.
-- confirmar el pedido.
-- registrar el pedido en el sistema.
-- dar un comprobante de pedido mediante un qr o alguna cosa.
-
-### no funcionales :
-- interfaz.
+### No funcionales :
+- interfaz accesible desde computador o celular.
 - base de datos persistente.
 - autenticación. 
+- disponibilidad durante el horario academico.
 
 ## MoSCoW
 
-### m. requerimientos no negociables:
+### MUST requerimientos no negociables:
+Funcionalidades minimas para que el sistema exista.
+- Login.
+- Lista articulos, visualizacion de menu.
+- Carrito de compras .
+- Confirmacion de pedido.
+- Registrar pedido en la base de datos.
 
-- login.
-- lista articulos.
-- carrito.
-- confirma pedido.
-- registrar pedido.
+### SHOULD. importante pero no critico
 
-### s. que pueden faltar 
+- Reducir la cantidad de articulos.
+- Verificar el estado de el articulo.
+- Modificar entidades.
+- Generar comprobante de recogiida.
 
-- reducir la cantidad de articulos.
-- verificar el estado de el articulo.
-- modificar entidades.
+### COULD se implementan si sobra tiempo y recursos
 
-### c.se implementan si sobra tiempo y recursos
-
--historial de pedidos.
--ver a detalle cada pedido.
--buscador.
--filtros.
+- Historial de pedidos.
+- Ver a detalle cada pedido.
+- Buscador.
+- Filtros.
 
 
-### w . se evita para que el sistema no se descontrole 
+### WONT . se evita para que el sistema no se descontrole 
 
--notificaciones.
--pagos inmediatos desde la aplicacion.
+- notificaciones.
+- aplicacion movil
+- pagos inmediatos desde la aplicacion.
