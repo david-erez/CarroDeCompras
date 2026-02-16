@@ -70,3 +70,4 @@ Funcionalidades minimas para que el sistema exista.
 - notificaciones.
 - aplicacion movil
 - pagos inmediatos desde la aplicacion.
+- turnos de recogida
